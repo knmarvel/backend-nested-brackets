@@ -23,11 +23,10 @@ def is_nested(line):
         "parens": ["(", ")"],
         "squares": ["[", "]"],
         "curlies": ["{", "}"],
-        "alligators": ["<",">"]
+        "alligators": ["<", ">"]
     }
     answer = "YES"
     bracs_used = []
-    last_opened_index = 0
     while line:
         if line[:2] == "(*" or line[:2] == "*)":
             token = line[:2]
@@ -36,7 +35,6 @@ def is_nested(line):
         for brac in brac_types:
             if token == brac_types[brac][0]:
                 bracs_used.append(token)
-                last_opened_index = index
             if token == brac_types[brac][1]:
                 if bracs_used[-1] != brac_types[brac][0]:
                     answer = "NO " + str(index + 1)
