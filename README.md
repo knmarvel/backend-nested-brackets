@@ -1,3 +1,5 @@
+![Kano's Logo](https://i.imgur.com/Yc5nxbI.png)
+
 # Checking for Properly Nested Brackets
 Today's exercise is drawn from the [ACM's](https://en.wikipedia.org/wiki/Association_for_Computing_Machinery) Intercollegiate Programming Contest (the ICPC), an annual tournament in which teams of three students from colleges and universities across the world compete to see how quickly they can write programs to solve specific tasks.
 
